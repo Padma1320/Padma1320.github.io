@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Padma Muthu Lakshmanan — Robotics, Autonomous Systems and Physical AI portfolio." />
+  <title>Padma Muthu Lakshmanan — Autonomous Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="nav">
+    <a class="brand" href="#top">PML<span>.</span></a>
+    <nav>
+      <a href="#work">Work</a><a href="#research">Research</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">ROBOTICS · AUTONOMOUS SYSTEMS · PHYSICAL AI</div>
+      <h1>I build intelligence that <em>interacts with the physical world.</em></h1>
+      <p class="lede">I'm <strong>Padma Muthu Lakshmanan</strong>, an Instrumentation & Control Engineering student at NIT Trichy exploring how machines <b>sense, decide, act and adapt through feedback</b> — from embedded sensing and computer vision to ROS 2 autonomy and safe reinforcement learning.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="#work">Explore my work ↓</a>
+        <a class="button" href="https://github.com/Padma1320" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+      <div class="loop" aria-label="Autonomy loop">
+        <div><span>01</span>SENSE</div><i>→</i><div><span>02</span>UNDERSTAND</div><i>→</i><div><span>03</span>DECIDE</div><i>→</i><div><span>04</span>ACT</div><i>↺</i><div><span>05</span>FEEDBACK</div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <p class="section-index">00 / CURIOSITY</p>
+      <blockquote>“How do we give a machine the ability to turn sensor information into a decision, act on the physical world, observe what happened — and make the next decision better?”</blockquote>
+      <p>That question connects my background in sensors, signals and closed-loop control with my work in robotics, perception and reinforcement learning. I am especially interested in autonomy where intelligence must contend with real dynamics, uncertainty, safety constraints and hardware — not only software agents.</p>
+    </section>
+
+    <section id="work">
+      <div class="section-head"><p class="section-index">01 / FEATURED WORK</p><h2>Autonomy, from sensing to action.</h2></div>
+
+      <article class="feature flagship">
+        <div class="feature-top"><span class="status">FLAGSHIP · INDUSTRY + RESEARCH</span><span>2026</span></div>
+        <div class="feature-grid">
+          <div>
+            <h3>Navis ASV — Autonomous Maritime Navigation</h3>
+            <p class="big">From an industry internship building and validating autonomous vessel simulation to a research spin-off in safe, learned multi-vessel decision-making.</p>
+            <div class="tags"><span>ROS 2</span><span>Gazebo / VRX</span><span>LiDAR</span><span>LOS</span><span>SAC</span><span>MOP</span><span>Recurrent PPO</span><span>LSTM</span><span>Residual RL</span><span>Predictive Safety</span><span>COLREG-aware</span></div>
+          </div>
+          <div class="metrics">
+            <div><b>96.67%</b><small>R1–R7 validation success</small></div>
+            <div><b>87 / 90</b><small>successful episodes</small></div>
+            <div><b>0</b><small>stalls in final regression</small></div>
+            <div><b>5 s</b><small>predictive safety horizon</small></div>
+          </div>
+        </div>
+        <div class="storyline">
+          <div><b>Internship engineering</b><p>Configured Seaconvoy's Navis ASV in Gazebo; worked across vehicle validation, sensors, waypoint navigation, classical LOS guidance and RL path-following / collision-avoidance experimentation, including SAC and MOP approaches.</p></div>
+          <div class="arrow">→</div>
+          <div><b>Research spin-off</b><p>Developed a hierarchical architecture with recurrent steering and speed PPO policies, a joint residual policy, and a receding-horizon predictive safety filter for variable-speed multi-vessel navigation.</p></div>
+        </div>
+        <div class="feature-links">
+          <a href="assets/asv-research-paper.pdf" target="_blank">Read manuscript ↗</a>
+          <a href="assets/seaconvoy-internship-certificate.pdf" target="_blank">Internship certificate ↗</a>
+        </div>
+      </article>
+
+      <article class="feature">
+        <div class="feature-top"><span class="status live">IN DEVELOPMENT</span><span>2026</span></div>
+        <div class="feature-grid">
+          <div>
+            <h3>GeoNav AI — Geospatial Autonomous UAV</h3>
+            <p class="big">A ROS 2 + PX4 autonomy stack connecting mission planning, vehicle state and geospatial intelligence to physical UAV decision-making in simulation.</p>
+            <div class="tags"><span>PX4 SITL</span><span>ROS 2 Humble</span><span>Gazebo Harmonic</span><span>Micro XRCE-DDS</span><span>px4_msgs</span><span>Mission Planning</span></div>
+          </div>
+          <div class="diagram">
+            <span>GEO DATA</span><i>→</i><span>MISSION</span><i>→</i><span>PX4 / ROS 2</span><i>→</i><span>UAV</span>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="card">
+          <span class="num">03</span><h3>Dual-Stage PCB Defect Detection</h3>
+          <p>Two-specialist YOLOv11 inspection pipeline spanning bare-board fabrication and populated-board assembly, with defect-to-corrective-action mapping and Azure IoT telemetry.</p>
+          <div class="mini-metrics"><b>10 classes</b><b>91.12% mAP@0.5</b><b>78.5 FPS</b></div>
+          <div class="tags"><span>YOLOv11</span><span>PyTorch</span><span>ONNX</span><span>Azure IoT</span><span>MQTT</span></div>
+        </article>
+        <article class="card">
+          <span class="num">04</span><h3>EV Battery Health Monitoring</h3>
+          <p>Edge-first ESP32-S3 monitoring architecture combining voltage, current and temperature sensing with filtering, state estimation and deterministic FSM-based safety logic.</p>
+          <div class="mini-metrics"><b>&lt;100 ms edge logic</b><b>13 test scenarios</b></div>
+          <div class="tags"><span>ESP32-S3</span><span>ACS712</span><span>LM35</span><span>SoC</span><span>FSM</span><span>IoT</span></div>
+        </article>
+        <article class="card">
+          <span class="num">05</span><h3>Autonomous Warehouse Robot</h3>
+          <p>ROS 2 mobile robot stack using 360° LiDAR and SLAM Toolbox for occupancy-grid mapping, TF visualization and autonomous patrol with obstacle-aware mission logic.</p>
+          <div class="mini-metrics"><b>0.5 m obstacle threshold</b><b>zero-collision project validation</b></div>
+          <div class="tags"><span>ROS 2 Jazzy</span><span>Gazebo</span><span>SLAM</span><span>LiDAR</span><span>RViz</span><span>rclpy</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="section-head"><p class="section-index">02 / RESEARCH</p><h2>Making learned autonomy safer.</h2></div>
+      <article class="paper">
+        <div><span class="status">SUBMITTED · ICRA 2027 / RAS</span>
+          <h3>Progress-Aware Predictive Safety Filtering for Hierarchical Recurrent Reinforcement Learning in Multi-Vessel ASV Navigation</h3>
+          <p>Separate recurrent steering and speed policies propose nominal actions; a recurrent joint residual policy coordinates bounded corrections; a predictive safety filter screens steering-speed candidates before execution. Progress-aware ranking is applied only after safety admissibility.</p>
+          <a class="button" href="assets/asv-research-paper.pdf" target="_blank">View manuscript ↗</a>
+        </div>
+        <div class="architecture">
+          <span>RECURRENT<br>STEERING PPO</span><span>RECURRENT<br>SPEED PPO</span><i>↓</i><strong>JOINT RESIDUAL PPO</strong><i>↓</i><strong>PREDICTIVE SAFETY FILTER</strong><i>↓</i><span>EXECUTED ASV COMMAND</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="about">
+      <div class="section-head"><p class="section-index">03 / FOUNDATION</p><h2>Instrumentation is my bridge to autonomy.</h2></div>
+      <div class="about-grid">
+        <div>
+          <p class="big">B.Tech, Instrumentation & Control Engineering<br><b>National Institute of Technology, Tiruchirappalli</b><br>2023 — 2027</p>
+          <p>My coursework gives me a physical-system view of AI: what is measured, how signals behave, how controllers respond, how electronics interface with the plant, and how feedback closes the loop.</p>
+        </div>
+        <div class="course-grid">
+          <div><b>Sensing & Measurement</b><p>Sensors & Transducers · Industrial Instrumentation · Analytical Instrumentation · Optical Instrumentation · Biomedical Instrumentation · Electrical & Electronic Measurement</p></div>
+          <div><b>Signals & Electronics</b><p>Signals & Systems · Digital Signal Processing · Circuit Theory · Analog & Digital Electronics · Microprocessors & Microcontrollers</p></div>
+          <div><b>Dynamics & Control</b><p>Control Systems · Process Control · Robotics · P&ID · PLC · SCADA · DCS</p></div>
+          <div><b>Engineering Computing</b><p>Linear Algebra · MATLAB · SPICE / LTspice · Python · C · C++ · simulation and robotics tooling</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack">
+      <p class="section-index">04 / AUTONOMY STACK</p>
+      <div class="stack-row"><b>PERCEPTION</b><span>LiDAR · Stereo · YOLO · OpenCV · SLAM · Sensor Fusion</span></div>
+      <div class="stack-row"><b>DECISION</b><span>PPO · SAC · LSTM · Residual RL · CPA/TCPA · FSM · Mission Logic</span></div>
+      <div class="stack-row"><b>CONTROL</b><span>LOS · Feedback Control · Path Following · Safety Filtering · Replanning</span></div>
+      <div class="stack-row"><b>PLATFORMS</b><span>ROS 2 · PX4 · Gazebo · ESP32 · Azure IoT · MQTT</span></div>
+      <div class="stack-row"><b>CODE</b><span>Python · C · C++ · PyTorch · TensorFlow · NumPy · Pandas · ONNX</span></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="section-index">05 / CONTACT</p>
+      <h2>Interested in robots that have to make decisions in the real world.</h2>
+      <p>I'm building toward work in robotics, autonomous systems, physical AI, perception and learning-based control.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:padma.muthu.lakshmanan@gmail.com">Email me ↗</a>
+        <a class="button" href="https://github.com/Padma1320" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>PADMA MUTHU LAKSHMANAN</span><span>Sense → Decide → Act → Feedback</span><span id="year"></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
