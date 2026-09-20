@@ -1,1 +1,0 @@
-const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('seen')}),{threshold:.08});document.querySelectorAll('article,figure,.metrics,.timeline,.sectionTitle').forEach(el=>{el.classList.add('reveal');obs.observe(el)});
